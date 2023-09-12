@@ -1,0 +1,53 @@
+/* importar tipgrafia */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+
+   
+}
+/*selector etiqueta*/
+a{
+    margin-left: 30px;
+    color: red;
+}
+
+/*selector por id*/
+#option_one{
+    color: blue;
+#option_two{
+    color: red;
+#option_trhee{
+    color: yellow;
+}
+
+/* selector class*/
+.group_options{
+    background-color: bisque;
+    margin-top: 5px;
+}
+.group_class{
+    padding: 10px;
+}
+/*selector por pseudoclases */
+.group_options:hover{
+    background-color: yellow;
+    color: black;
+}
+/*selector por atributo*/
+[disable]{
+    background-color: red;
+}
+/*selectores descendentes*/
+#papa{
+    border: 2px solid red;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow: 0px 20px 10px;
+}
+#papa > .hermanos + .hermanos{
+    color: aqua;
+
+}
