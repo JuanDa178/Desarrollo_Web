@@ -1,53 +1,61 @@
-/* importar tipgrafia */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-/*selector universal*/
-*{
-    margin: 0;
-    padding: 0;
+         /* importar tipografía */
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
+         /* Selector Universal */
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
-   
-}
-/*selector etiqueta*/
-a{
-    margin-left: 30px;
-    color: red;
-}
-
-/*selector por id*/
-#option_one{
-    color: blue;
-#option_two{
-    color: red;
-#option_trhee{
-    color: yellow;
-}
-
-/* selector class*/
-.group_options{
-    background-color: bisque;
-    margin-top: 5px;
-}
-.group_class{
-    padding: 10px;
-}
-/*selector por pseudoclases */
-.group_options:hover{
-    background-color: yellow;
-    color: black;
-}
-/*selector por atributo*/
-[disable]{
-    background-color: red;
-}
-/*selectores descendentes*/
-#papa{
-    border: 2px solid red;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 20px;
-    box-shadow: 0px 20px 10px;
-}
-#papa > .hermanos + .hermanos{
-    color: aqua;
-
-}
+        /* Selector por Etiqueta */
+        body{
+            background-color: antiquewhite;
+            font-family: 'Montserrat', sans-serif ;
+        }
+        a{
+            text-decoration-line: none;
+            margin-left: 30px;
+            color: orange;
+        }
+        /*  Selector por id*/
+        #option_one, #option_two, #option_three {
+            color:#0000ff;
+        }
+        /* Selector por clases */
+        .group_options{
+            background-color: rgb(83, 83, 60);
+            margin: 5px;
+        }
+        .group_class{
+            background-color: green;
+            padding: 10px;
+        }
+        /* selector por pseudoclases */
+        .group_options:hover{
+            background-color: yellow;
+            color: black;
+        }
+        /* Selector por atributo */
+        [disabled]{
+            background-color: red;
+        }
+        /* Selector decentes */
+        #papa{
+            border: 10px double red;
+            border-radius: 10px;
+            margin-right: 100px;
+            margin-left: 100px;
+            padding: 20px;
+            box-shadow: 0px 20px 100px;
+        }
+        /* Selector adyacente */
+        #papa > .hermanos + .hermanos{
+            color: #0000ff;
+        }
+        /* Selector descendente */
+        #papa a {
+            color: blue;
+        }
+        /* Selector Hijo */
+        #papa > #etiqueta > a{
+            color:pink;
+        }
